@@ -1,0 +1,594 @@
+$colorbg: #393939;
+$colorbgMain: #C0C0C0;
+$tamanioTitulo: 6vw;
+$estiloTitulo: linear-gradient(180deg, #C0C0C0 0%, #393939 100%);
+$estiloLeta: 'Ubuntu', sans-serif;
+$estiloh2:  'Rubik', sans-serif;
+
+@mixin sizes($ancho, $alto)
+     {
+        width: $ancho;
+        height: $alto;
+ }
+ 
+*{
+    margin:0; padding:0;
+}
+.estiloh1{
+    color: transparent;
+            font-style: normal;
+            font-family: $estiloLeta;
+            text-align: center;
+            text-transform: capitalize;
+            font-size: $tamanioTitulo;
+            background: $estiloTitulo;
+	        -webkit-background-clip:text;
+	        position: relative;
+            padding: 10px 10px 10px 10px;
+}
+h2{
+    color:transparent;
+    background: $estiloTitulo;
+    -webkit-background-clip:text;
+    font-style: normal;
+    font-family: $estiloh2;
+    font-size: 30px;
+    padding: 10px 10px 30px 10px;
+}
+p{
+    color: $colorbg;
+    font-style: normal;
+    font-family: $estiloLeta;
+    word-spacing: 10px;
+    text-transform: none;
+}
+/*ARRANCA CLASS HEADER*/
+.header{
+    background-color: $colorbg;
+    font-size: 20px;
+    font-family: $estiloh2;
+    font-weight: 400;
+    color: rgb(238, 245, 245);
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    opacity: 80%;
+
+    .header__logo{
+        opacity: 70%;
+        background-color: $colorbg;
+    }
+}
+/*TERMINA CLASS HEADER*/
+/*ARRANCA CLASS MAIN*/
+/*Main Home*/
+.main{
+    background-color: $colorbgMain;
+
+    .main__titulo{
+
+        .titulo__img{
+            position: relative;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            @include sizes(100%, auto);
+        }
+        .titulo__index{
+            @extend .estiloh1
+        }
+    }
+    .main__grilla{
+        .grilla__aUno{
+            grid-area: articulo1;
+            @include sizes(100%, 100%);
+        }
+        .grilla__aDos{
+            grid-area: articulo2;
+            @include sizes(100%, 100%);
+        }
+        .grilla_divImg{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+
+            .divImg__fUno{
+                grid-area: foto1;
+                @include sizes(80%, 80%);
+            }
+            .divImg__fDos{
+                grid-area: foto2;
+                @include sizes(80%, 80%);
+            }
+        }
+    }
+
+}
+/*Main Candidatos*/
+.can{
+    background-color: $colorbgMain;
+
+    .can__titulo{
+
+        .titulo__brujula{
+            position: relative;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            @include sizes(100%, auto);
+        }
+        .titulo__can{
+            @extend .estiloh1
+        }
+    }
+    .can__formularios{
+
+        .formularios__candidatosA{
+            flex-grow: 1;
+            border-radius: 16px;
+            margin: 16px;
+            background-color: lightgray;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            opacity: 90%;
+
+            .candidatosA__agenda{
+                color: rgb(58, 73, 68);
+                text-align: center;
+                text-decoration: none;
+                font-style: normal;
+                font-family: $estiloLeta;
+                word-spacing: 10px;
+                text-transform: none;
+                
+            }
+        }
+        .formularios__candidatosCV{
+            @extend .formularios__candidatosA;
+
+            .candidatosCV__cv{
+                @extend .candidatosA__agenda;
+            }
+        }
+    }
+}
+/*Main empresas*/
+.empresas{
+    background-color: $colorbgMain;
+}
+
+/*Main Quien Somos?*/
+.qs{
+    background-color: $colorbgMain;
+}
+    #quienSomosSection{
+        padding: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .quienSomos{
+        border-radius: 16px;
+        margin: 16px;
+        background-color: rgb(226, 214, 214);
+        width: 40%;
+        opacity: 80%;
+    }
+    
+    .imagenQuienSomos{
+        display: flex;
+        justify-content: center;
+        background-size: contain;
+        background-color: rgb(226, 214, 214);
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    
+    .contenidoQuienSomos{
+        padding: 16px 8px 16px 8px;
+        color: rgb(48, 47, 46);
+        font-style: normal;
+        font-family: 'Rubik', sans-serif;
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .tituloQuienSomos{
+        padding-bottom: 8px;
+        color: rgb(58, 33, 8);
+        font-style: normal;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 20px;
+    }
+    
+    #servicios{
+        color: rgb(48, 47, 46);
+        padding: 16px 8px 16px 8px;
+        font-style: normal;
+        font-family: 'Rubik', sans-serif;
+        font-size: 40px;
+        text-align: center;
+    }
+/*Main Contacos*/
+.contactos{
+    background-color: $colorbgMain;
+
+    .contactos__formulario{
+        color: rgb(58, 73, 68);
+        text-decoration: none;
+        text-align: left;
+        font-style: normal;
+        font-family: 'Ubuntu', sans-serif;
+        word-spacing: 10px;
+        text-transform: none;
+        background-image: url(carta.jpg);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+    }
+}
+/*TERMINA CLASS MAIN*/
+/*ARRANCA CLASS FOOTER*/
+.footer{
+    background-color: $colorbg;
+    height: 100px;
+
+    .footer__nav{
+
+        display: flex;
+        background-color: $colorbg;
+        background: linear-gradient(180deg, $colorbgMain 0%, $colorbg 100%);
+        color: rgb(60, 85, 85);
+        list-style-type: none;
+        font-family: $estiloh2;
+        font-weight: 200;
+        justify-content: space-around;
+        align-items: center;
+        @include sizes(100%, 100%);
+        
+
+        .nav__item{
+            
+
+            .item__imagen{
+                padding-top: 10px;
+                width: 50px;
+
+            }
+        }
+    }
+
+}
+/*TERMINA CLASS FOOTER*/
+/*Medias Query*/
+@media only screen and (max-width: 600px){
+    #grilla{
+        display: grid;
+        height: 1200px;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 200px 200px 200px;
+        grid-template-areas: "foto1"
+                             "articulo1"
+                             "foto2"
+                             "articulo2";
+        justify-content: center;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+.divImg__fUno{
+    grid-area: foto1;
+    @include sizes(70%, 70%);
+}
+.divImg__fDos{
+    grid-area: foto2;
+    @include sizes(70%, 70%);
+}
+.grilla__divImg{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.grilla__aUno{
+    grid-area: articulo1;
+    @include sizes(100%, 100%);
+}
+.grilla__aDos{
+    grid-area: articulo2;
+    @include sizes(100%, 100%);
+}
+    #grillaCandidatos{
+        display: grid;
+        height: 600px;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 200px;
+        grid-template-areas: "formularioAgenda"
+                             "formularioCV";
+        justify-content: center;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        padding: 16px;
+}
+.empresas__grilla{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% 25%;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    grid-template-areas: "foto1 foto2" 
+                         "foto3 foto4"
+                         "foto5 foto6" 
+                         "foto7 foto8"
+                         "foto9 foto10" 
+                         "foto11 foto12";
+    justify-content: center;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.fotoUno{
+    grid-area: foto1;
+    @include sizes(90%, 90%);
+}
+.fotoDos{
+    grid-area: foto2;
+    @include sizes(90%, 90%);
+}
+.fotoTres{
+    grid-area: foto3;
+    @include sizes(90%, 90%);
+}
+.fotoCuatro{
+    grid-area: foto4;
+    @include sizes(90%, 90%);
+}
+.fotoCinco{
+    grid-area: foto5;
+   @include sizes(90%, 90%);
+}
+.fotoSeis{
+    grid-area: foto6;
+    @include sizes(90%, 90%);
+}
+.fotoSiete{
+    grid-area: foto7;
+    @include sizes(90%, 90%);
+}
+.fotoOcho{
+    grid-area: foto8;
+    @include sizes(90%, 90%);
+}
+.fotoNueve{
+    grid-area: foto9;
+    @include sizes(90%, 90%);
+}
+.fotoDiez{
+    grid-area: foto10;
+    @include sizes(90%, 90%);
+}
+.fotoOnce{
+    grid-area: foto11;
+   @include sizes(90%, 90%);
+}
+.fotoDoce{
+    grid-area: foto12;
+    @include sizes(90%, 90%);
+}
+}
+
+@media only screen and (min-width: 600px){
+    #grilla{
+        display: grid;
+        height: 1200px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 400px 400px;
+        grid-template-areas: "foto1 articulo1"
+                             "articulo2 foto2";
+        justify-content: center;                         
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;                     
+}
+.divImg__fUno{
+    grid-area: foto1;
+    @include sizes(75%, 75%);
+}
+.divImg__fDos{
+    grid-area: foto2;
+    @include sizes(75%, 75%);
+}
+.grilla__divImg{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.grilla__aUno{
+    grid-area: articulo1;
+    @include sizes(100%, 100%);
+}
+.grilla__aDos{
+    grid-area: articulo2;
+    @include sizes(100%, 100%);
+}
+    #grillaCandidatos{
+        display: grid;
+        height: 600px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 400px;
+        grid-template-areas:"formularioAgenda formularioCV";
+        justify-content: center;                         
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        padding: 16px;
+}
+.empresas__grilla{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-template-areas: "foto1 foto2 foto3" 
+                         "foto4 foto5 foto6"
+                         "foto7 foto8 foto9" 
+                         "foto10 foto11 foto12";
+    justify-content: center;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.fotoUno{
+    grid-area: foto1;
+    @include sizes(90%, 90%);
+}
+.fotoDos{
+    grid-area: foto2;
+    @include sizes(90%, 90%);
+}
+.fotoTres{
+    grid-area: foto3;
+    @include sizes(90%, 90%);
+}
+.fotoCuatro{
+    grid-area: foto4;
+    @include sizes(90%, 90%);
+}
+.fotoCinco{
+    grid-area: foto5;
+   @include sizes(90%, 90%);
+}
+.fotoSeis{
+    grid-area: foto6;
+    @include sizes(90%, 90%);
+}
+.fotoSiete{
+    grid-area: foto7;
+    @include sizes(90%, 90%);
+}
+.fotoOcho{
+    grid-area: foto8;
+    @include sizes(90%, 90%);
+}
+.fotoNueve{
+    grid-area: foto9;
+    @include sizes(90%, 90%);
+}
+.fotoDiez{
+    grid-area: foto10;
+    @include sizes(90%, 90%);
+}
+.fotoOnce{
+    grid-area: foto11;
+   @include sizes(90%, 90%);
+}
+.fotoDoce{
+    grid-area: foto12;
+    @include sizes(90%, 90%);
+}    
+}
+
+@media only screen and (min-width: 992px){
+    #grilla{
+        display: grid;
+        height: 100%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 400px 400px;
+        grid-template-areas: "foto1 articulo1"
+                             "articulo2 foto2";
+        justify-content: center;                         
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;                     
+}
+.divImg__fUno{
+    grid-area: foto1;
+    @include sizes(80%, 80%);
+}
+.divImg__fDos{
+    grid-area: foto2;
+    @include sizes(80%, 80%);
+}
+.grilla__divImg{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.grilla__aUno{
+    grid-area: articulo1;
+    @include sizes(100%, 100%);
+}
+.grilla__aDos{
+    grid-area: articulo2;
+    @include sizes(100%, 100%);
+}
+    #grillaCandidatos{
+        display: grid;
+        height: 600px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 400px;
+        grid-template-areas:"formularioAgenda formularioCV";
+        justify-content: center;                         
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        padding: 16px;
+}
+.empresas__grilla{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15%;
+    grid-template-rows: 150px 150px 150px;
+    grid-template-areas: "foto1 foto2 foto3 foto4"
+                         "foto5 foto6 foto7 foto8"
+                         "foto9 foto10 foto11 foto12";
+    justify-content: center;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.fotoUno{
+    grid-area: foto1;
+    @include sizes(90%, 90%);
+}
+.fotoDos{
+    grid-area: foto2;
+    @include sizes(90%, 90%);
+}
+.fotoTres{
+    grid-area: foto3;
+    @include sizes(90%, 90%);
+}
+.fotoCuatro{
+    grid-area: foto4;
+    @include sizes(90%, 90%);
+}
+.fotoCinco{
+    grid-area: foto5;
+   @include sizes(90%, 90%);
+}
+.fotoSeis{
+    grid-area: foto6;
+    @include sizes(90%, 90%);
+}
+.fotoSiete{
+    grid-area: foto7;
+    @include sizes(90%, 90%);
+}
+.fotoOcho{
+    grid-area: foto8;
+    @include sizes(90%, 90%);
+}
+.fotoNueve{
+    grid-area: foto9;
+    @include sizes(90%, 90%);
+}
+.fotoDiez{
+    grid-area: foto10;
+    @include sizes(90%, 90%);
+}
+.fotoOnce{
+    grid-area: foto11;
+   @include sizes(90%, 90%);
+}
+.fotoDoce{
+    grid-area: foto12;
+    @include sizes(90%, 90%);
+}    
+}

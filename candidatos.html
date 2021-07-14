@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="En HeadHunter nos gustaría que seas parte de esta red de profesionales y poder conocer mejor tus objetivos para poder ayudarte en la búsqueda.">
+    <meta name="keywords"  content="HEADHUNTER, RED PROFESIONAL, CARGOS DE ALTO NIVEL, EMPRESAS INTERNACIONALES, EMPRESAS NACIONALES, RECUROS HUMANOS">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,400&family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pruebacss.css">
+    <title>Head Hunter Candidatos</title>
+</head>
+<body>
+<!--Arranca Header-->
+  <header class="header">
+    <a class="header__logo" href="indexprueba.html"><img src="/Fotos/LogoHeadHunter2b.jpg" alt="logo" width="80%" height="80%"></a>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #393939;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="indexprueba.html"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="indexprueba.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="quiensomosprueba.html">Quienes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="candidatosprueba.html">Candidatos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="empresasprueba.html">Empresas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactoprueba.html" tabindex="-1" aria-disabled="true">Contactos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+<!--Termina Header-->
+<!--Arranca Main-->
+<main class="can">
+    <div class="can__titulo">
+        <img class="titulo__brujula" src="/Fotos/brujula2.jpg" alt="Foto brujula y mapa en blanco y negro">
+        <h1 class="titulo__can">Ingresa a nuestra base de datos</h1>
+    
+        <p>Si eres profesional Universitario o has desarrollado una experiencia interesante a nivel gerencial o como líder de equipo, podemos acompañarte en el próximo paso de tu carrera.</p>
+        <p>Puedes integrarte a nuestra base de datos completando el siguiente registro.</p>
+        <p>La mejor manera de comenzar a trabajar juntos, es conocer su organización.</p>
+        <p>Coordinemos un encuentro o envia tu CV.</p>
+    </div>
+    <div class="can__formularios" id="grillaCandidatos">
+        <div class="formularios__candidatosA">
+            <div>
+                <h2>Agendar reunión</h2>
+            </div>
+            <div class="candidatosA__agenda">    
+                <form action="">
+                <label for="nombreusuario">Ingrese su nombre</label>
+                <input type="text" placeholder="Nombre" name="nombreusuario">
+                <br>
+                <label for="mail">Ingrese email</label>
+                <input type="email" placeholder="Correo electronico" name="mail">
+                <br>
+                <label for="cv">Adjuntar CV</label>
+                <input type="file" placeholder="Curriculum Vitae" name="cv">
+                <br>
+                <label for="estudios">Estudios Terminados</label>
+                <select name="estudios">
+                    <option value="S">Secundario</option>
+                    <option value="T">Terciario</option>
+                    <option value="U">Universitario</option>
+                </select>
+                <br>
+                <label for="acepta">Acepta términos y condiciones</label>
+                <input type="checkbox" name="acepta" value="1"/>
+                <br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Restablecer">
+            </div>    
+        </div>
+        <div class="formularios__candidatosCV">
+            <div>
+                <h2>Enviar curriculum vitae</h2>
+                <p>Si tienes consultas en relación a nuestros servicios puedes contactarnos. Nos encantaría poder construir una solución juntos.</p>
+            </div>
+            <div class="candidatosCV__cv">
+                <form action="">
+                <label for="nombreusuario">Ingrese su nombre</label>
+                <input type="text" placeholder="Nombre" name="nombreusuario">
+                <br>
+                <label for="mail">Ingrese email</label>
+                <input type="email" placeholder="Correo electronico" name="mail">
+                <br>
+                <label for="cv">Adjuntar CV</label>
+                <input type="file" placeholder="Curriculum Vitae" name="cv">
+                <br>
+                <label for="estudios">Estudios Terminados</label>
+                <select name="estudios">
+                    <option value="S">Secundario</option>
+                    <option value="T">Terciario</option>
+                    <option value="U">Universitario</option>
+                </select>
+                <br>
+                <label for="acepta">Acepta términos y condiciones</label>
+                <input type="checkbox" name="acepta" value="1"/>
+                <br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Restablecer">
+            </div>
+        </div>    
+    </div>
+    </main>
+<!--Termina Main-->
+<!--Arranca Footer-->
+    <footer class="footer">
+        <ul class="footer__nav"> <!--Los logos del footer los tengo que cambiar-->
+            <li class="nav__item">
+                 <a href="https://www.instagram.com/?hl=es-la"><img class="item__imagen" src="Instagram.jpg" alt="logoInstagram"></a>
+            </li>
+            <li class="nav__item">
+                 <a href="https://uy.linkedin.com/"><img class="item__imagen" src="LinkedIn.jpg" alt="logoLinkedIn"></a>
+            </li>
+            <li class="nav__item">
+                 <a href="https://twitter.com/?lang=es"><img class="item__imagen" src="Twitter.jpg" alt="logoTwitter"></a>
+            </li>
+        </ul>
+    </footer>
+<!--Termina Footer-->
+<!--Script de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
