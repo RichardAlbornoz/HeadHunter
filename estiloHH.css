@@ -207,11 +207,8 @@ p {
     display: grid;
     height: 1200px;
     grid-template-columns: 100%;
-    grid-template-rows: 200px 200px 200px 200px;
-    grid-template-areas: "foto1"
- "articulo1"
- "foto2"
- "articulo2";
+    grid-template-rows: 250px 250px 250px 250px;
+    grid-template-areas: "foto1" "articulo1" "foto2" "articulo2";
     justify-content: center;
     grid-column-gap: 20px;
     grid-row-gap: 20px; }
@@ -240,8 +237,7 @@ p {
     height: 600px;
     grid-template-columns: 100%;
     grid-template-rows: 200px 200px;
-    grid-template-areas: "formularioAgenda"
- "formularioCV";
+    grid-template-areas: "formularioAgenda" "formularioCV";
     justify-content: center;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
@@ -251,12 +247,7 @@ p {
     display: grid;
     grid-template-columns: 25% 25%;
     grid-template-rows: 100px 100px 100px 100px 100px 100px;
-    grid-template-areas: "foto1 foto2" 
- "foto3 foto4"
- "foto5 foto6" 
- "foto7 foto8"
- "foto9 foto10" 
- "foto11 foto12";
+    grid-template-areas: "foto1 foto2"  "foto3 foto4" "foto5 foto6"  "foto7 foto8" "foto9 foto10"  "foto11 foto12";
     justify-content: center;
     grid-column-gap: 20px;
     grid-row-gap: 20px; }
@@ -315,8 +306,7 @@ p {
     height: 1200px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 400px 400px;
-    grid-template-areas: "foto1 articulo1"
- "articulo2 foto2";
+    grid-template-areas: "foto1 articulo1" "articulo2 foto2";
     justify-content: center;
     grid-column-gap: 20px;
     grid-row-gap: 20px; }
@@ -355,10 +345,7 @@ p {
     display: grid;
     grid-template-columns: 20% 20% 20%;
     grid-template-rows: 100px 100px 100px 100px;
-    grid-template-areas: "foto1 foto2 foto3" 
- "foto4 foto5 foto6"
- "foto7 foto8 foto9" 
- "foto10 foto11 foto12";
+    grid-template-areas: "foto1 foto2 foto3"  "foto4 foto5 foto6" "foto7 foto8 foto9"  "foto10 foto11 foto12";
     justify-content: center;
     grid-column-gap: 20px;
     grid-row-gap: 20px; }
@@ -417,8 +404,7 @@ p {
     height: 100%;
     grid-template-columns: 50% 50%;
     grid-template-rows: 400px 400px;
-    grid-template-areas: "foto1 articulo1"
- "articulo2 foto2";
+    grid-template-areas: "foto1 articulo1" "articulo2 foto2";
     justify-content: center;
     grid-column-gap: 20px;
     grid-row-gap: 20px; }
@@ -457,9 +443,7 @@ p {
     display: grid;
     grid-template-columns: 15% 15% 15% 15%;
     grid-template-rows: 150px 150px 150px;
-    grid-template-areas: "foto1 foto2 foto3 foto4"
- "foto5 foto6 foto7 foto8"
- "foto9 foto10 foto11 foto12";
+    grid-template-areas: "foto1 foto2 foto3 foto4" "foto5 foto6 foto7 foto8" "foto9 foto10 foto11 foto12";
     justify-content: center;
     grid-column-gap: 20px;
     grid-row-gap: 20px; }
