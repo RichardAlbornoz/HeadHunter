@@ -123,6 +123,9 @@ p{
         .titulo__can{
             @extend .estiloh1
         }
+        .titulo__p{
+            padding: 0px 20px;
+        }
     }
     .can__formularios{
 
@@ -189,9 +192,10 @@ p{
         display: flex;
         justify-content: center;
         background-size: contain;
-        background-color: rgb(226, 214, 214);
+        background-color: lightgray;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
+        padding-top: 10px;
     }
     
     .contenidoQuienSomos{

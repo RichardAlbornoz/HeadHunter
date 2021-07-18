@@ -91,6 +91,8 @@ p {
     background-size: cover;
     width: 100%;
     height: auto; }
+  .can .can__titulo .titulo__p {
+    padding: 0px 20px; }
   .can .can__formularios .formularios__candidatosA, .can .can__formularios .formularios__candidatosCV {
     flex-grow: 1;
     border-radius: 16px;
@@ -137,9 +139,10 @@ p {
   display: flex;
   justify-content: center;
   background-size: contain;
-  background-color: #e2d6d6;
+  background-color: lightgray;
   border-top-left-radius: 8px;
-  border-top-right-radius: 8px; }
+  border-top-right-radius: 8px;
+  padding-top: 10px; }
 
 .contenidoQuienSomos {
   padding: 16px 8px 16px 8px;
