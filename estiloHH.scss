@@ -39,7 +39,7 @@ p{
     color: $colorbg;
     font-style: normal;
     font-family: $estiloLeta;
-    word-spacing: 10px;
+    word-spacing: 5px;
     text-transform: none;
 }
 /*ARRANCA CLASS HEADER*/
@@ -131,7 +131,7 @@ p{
             border-radius: 16px;
             margin: 16px;
             background-color: lightgray;
-            width: 100%;
+            width: 95%;
             height: 100%;
             text-align: center;
             opacity: 90%;
@@ -159,6 +159,11 @@ p{
 /*Main empresas*/
 .empresas{
     background-color: $colorbgMain;
+
+    .empresas__p{
+        text-align: center;
+        padding: 10px;
+    }
 }
 
 /*Main Quien Somos?*/
@@ -175,7 +180,7 @@ p{
     .quienSomos{
         border-radius: 16px;
         margin: 16px;
-        background-color: rgb(226, 214, 214);
+        background-color: lightgray;
         width: 40%;
         opacity: 80%;
     }
@@ -228,10 +233,15 @@ p{
         font-family: 'Ubuntu', sans-serif;
         word-spacing: 10px;
         text-transform: none;
-        background-image: url(carta.jpg);
-        background-repeat: no-repeat;
-        background-position: right;
-        background-size: contain;
+        padding: 0px 10px 0px 10px;
+
+        .formulario__form{
+            border-radius: 16px;
+            background-color: lightgray;
+            opacity: 90%;
+            width: 100%;
+            padding: 10px;
+        }
     }
 }
 /*TERMINA CLASS MAIN*/
@@ -298,16 +308,21 @@ p{
 .grilla__aUno{
     grid-area: articulo1;
     @include sizes(100%, 100%);
+    padding: 0px 20px;
 }
 .grilla__aDos{
     grid-area: articulo2;
     @include sizes(100%, 100%);
+    padding: 0px 20px;
 }
-    #grillaCandidatos{
+.grilla__aDos h2 {
+    text-align: center;
+}
+#grillaCandidatos{
         display: grid;
-        height: 600px;
+        height: 1200px;
         grid-template-columns: 100%;
-        grid-template-rows: 200px 200px;
+        grid-template-rows: 500px 600px;
         grid-template-areas: "formularioAgenda"
                              "formularioCV";
         justify-content: center;
@@ -408,16 +423,21 @@ p{
 .grilla__aUno{
     grid-area: articulo1;
     @include sizes(100%, 100%);
+    padding: 0px 20px;
 }
 .grilla__aDos{
     grid-area: articulo2;
     @include sizes(100%, 100%);
+    padding: 0px 20px;
+}
+.grilla__aDos h2 {
+    text-align: center; 
 }
     #grillaCandidatos{
         display: grid;
-        height: 600px;
+        height: 650px;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 400px;
+        grid-template-rows: 600px;
         grid-template-areas:"formularioAgenda formularioCV";
         justify-content: center;                         
         grid-column-gap: 20px;
@@ -515,10 +535,18 @@ p{
 .grilla__aUno{
     grid-area: articulo1;
     @include sizes(100%, 100%);
+    padding: 0px 20px;
 }
 .grilla__aDos{
     grid-area: articulo2;
     @include sizes(100%, 100%);
+    padding: 0px 20px;
+}
+.grilla__aDos h2{
+    text-align: center;
+}
+.grilla__aDos p{
+    word-spacing: 10px;
 }
     #grillaCandidatos{
         display: grid;

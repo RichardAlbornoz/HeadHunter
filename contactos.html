@@ -45,42 +45,48 @@
 </header>
 <!--Termina Header-->
 <!--Arranca Main-->
-<div>
-  <main class="contactos">
-      <div class="contactos__formulario">
+<main class="contactos">
+  <div class="contactos__formulario">
+    <div>
       <h1 class="estiloh1">Contactos</h1>
-  <br>
+      <br>
       <p>La mejor manera de comenzar a trabajar juntos, es conocer su organización.</p>
       <p>Coordinemos un encuentro.</p>
-  <br>
+    </div>  
+      <br>
+    <div class="formulario__form"> 
       <form action="">
-
-      <label for="nombreusuario">Ingrese su nombre</label>
-      <input type="text" placeholder="Nombre" name="nombreusuario">
-  <br>
-      <label for="mail">Ingrese email</label>
-      <input type="email" placeholder="Correo electronico" name="mail">
-  <br>
-      <label for="cv">Adjuntar CV</label>
-      <input type="file" placeholder="Curriculum Vitae" name="cv">
-  <br>
-      <label for="estudios">Estudios Terminados</label>
-      <select name="estudios">
-          <option value="S">Secundario</option>
-          <option value="T">Terciario</option>
-          <option value="U">Universitario</option>
-      </select>
-  <br>
-      <label for="acepta">Quiere recibir nuesto Newsletter</label>
-      <input type="checkbox" name="acepta" value="1"/>
-  <br>
-      <input type="submit" value="Enviar">
-      <input type="reset" value="Restablecer">
-      </div>
-  <br>
-</form>
-</div>
-  </main>
+        <label for="nombreusuario">Ingrese su nombre completo</label>
+        <input type="text" placeholder="Nombre y apellido" name="nombreusuario">
+        <br>
+        <label for="mail">Ingrese su correo electronico</label>
+        <input type="email" placeholder="email" name="mail">
+        <br>
+        <label for="numerotelefono">Ingrese un número de contacto</label>
+        <input type="number" placeholder="Numero de contacto" name="numerotelefono">
+        <br>
+        <label for="cv">Adjuntar CV</label>
+        <input type="file" placeholder="Curriculum Vitae" name="cv">
+        <br>
+        <label for="estudios">Estudios Terminados</label>
+        <select name="estudios">
+          <option value="value1">Tecnicatura</option>
+          <option value="value2">Posgrado</option>
+          <option value="value3">Maestria</option>
+          <option value="value4">Doctrorado</option>
+        </select>
+        <br>
+        <label for="acepta">Quiere recibir nuesto Newsletter</label>
+        <input type="checkbox" name="acepta" value="1"/>
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+    </div>
+        <br>
+      </form>
+  </div>
+</main>
 <!--Termina Main-->
 <!--Arranca Footer-->
     <footer class="footer">
