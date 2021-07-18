@@ -16,15 +16,15 @@ $estiloh2:  'Rubik', sans-serif;
 }
 .estiloh1{
     color: transparent;
-            font-style: normal;
-            font-family: $estiloLeta;
-            text-align: center;
-            text-transform: capitalize;
-            font-size: $tamanioTitulo;
-            background: $estiloTitulo;
-	        -webkit-background-clip:text;
-	        position: relative;
-            padding: 10px 10px 10px 10px;
+    font-style: normal;
+    font-family: $estiloLeta;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: $tamanioTitulo;
+    background: $estiloTitulo;
+	-webkit-background-clip:text;
+	position: relative;
+    padding: 10px 10px 10px 10px;
 }
 h2{
     color:transparent;
@@ -172,59 +172,88 @@ p{
 /*Main Quien Somos?*/
 .qs{
     background-color: $colorbgMain;
-}
-    #quienSomosSection{
-        padding: 16px;
+
+    .qs__h1{
+        @extend .estiloh1
+    }
+    .qs__section{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        padding: 16px;
+
+        .section__uno{
+            border-radius: 16px;
+            margin: 16px;
+            background-color: lightgray;
+            width: 40%;
+            opacity: 80%;
+
+            .uno__img{
+                display: flex;
+                justify-content: center;
+                background-size: contain;
+                background-color: lightgray;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+                padding-top: 10px;
+            }
+            .uno__contenido{
+                padding: 16px 8px 16px 8px;
+                color: rgb(48, 47, 46);
+                font-style: normal;
+                font-family: 'Rubik', sans-serif;
+                font-size: 15px;
+                text-align: center;
+            }
+            .uno__subTitulo{
+                padding-bottom: 8px;
+                color: rgb(63, 62, 62);
+                font-style: normal;
+                font-family: 'Ubuntu', sans-serif;
+                text-align: center;
+                text-transform: capitalize;
+                font-size: 20px;
+            }
+
+        }
+        .section__dos{
+            border-radius: 16px;
+            margin: 16px;
+            background-color: lightgray;
+            width: 40%;
+            opacity: 80%;
+
+            .dos__titulo{
+                color: transparent;
+                background: $estiloTitulo;
+                padding: 16px 8px 16px 8px;
+                font-style: normal;
+                font-family: 'Rubik', sans-serif;
+                font-size: 5vw;
+                text-align: center;
+                -webkit-background-clip:text;
+            }
+            .dos__contenido{
+                padding: 16px 8px 16px 8px;
+                color: rgb(48, 47, 46);
+                font-style: normal;
+                font-family: 'Rubik', sans-serif;
+                font-size: 15px;
+                text-align: center;
+            }
+            .dos__subTitulo{
+                padding-bottom: 8px;
+                color: rgb(63, 62, 62);
+                font-style: normal;
+                font-family: 'Ubuntu', sans-serif;
+                text-align: center;
+                text-transform: capitalize;
+                font-size: 20px;
+            }
+        }
     }
-    
-    .quienSomos{
-        border-radius: 16px;
-        margin: 16px;
-        background-color: lightgray;
-        width: 40%;
-        opacity: 80%;
-    }
-    
-    .imagenQuienSomos{
-        display: flex;
-        justify-content: center;
-        background-size: contain;
-        background-color: lightgray;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-        padding-top: 10px;
-    }
-    
-    .contenidoQuienSomos{
-        padding: 16px 8px 16px 8px;
-        color: rgb(48, 47, 46);
-        font-style: normal;
-        font-family: 'Rubik', sans-serif;
-        font-size: 15px;
-        text-align: center;
-    }
-    
-    .tituloQuienSomos{
-        padding-bottom: 8px;
-        color: rgb(58, 33, 8);
-        font-style: normal;
-        font-family: 'Ubuntu', sans-serif;
-        text-align: center;
-        text-transform: capitalize;
-        font-size: 20px;
-    }
-    
-    #servicios{
-        color: rgb(48, 47, 46);
-        padding: 16px 8px 16px 8px;
-        font-style: normal;
-        font-family: 'Rubik', sans-serif;
-        font-size: 40px;
-        text-align: center;
-    }
+}
 /*Main Contacos*/
 .contactos{
     background-color: $colorbgMain;
@@ -285,9 +314,9 @@ p{
 @media only screen and (max-width: 600px){
     #grilla{
         display: grid;
-        height: 1200px;
+        height: 1500px;
         grid-template-columns: 100%;
-        grid-template-rows: 250px 250px 250px 250px;
+        grid-template-rows: 300px 300px 300px 300px;
         grid-template-areas: "foto1"
                              "articulo1"
                              "foto2"
@@ -402,7 +431,7 @@ p{
 @media only screen and (min-width: 600px){
     #grilla{
         display: grid;
-        height: 1200px;
+        height: 1000px;
         grid-template-columns: 50% 50%;
         grid-template-rows: 400px 400px;
         grid-template-areas: "foto1 articulo1"

@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0; }
 
-.estiloh1, .main .main__titulo .titulo__index, .can .can__titulo .titulo__can {
+.estiloh1, .main .main__titulo .titulo__index, .can .can__titulo .titulo__can, .qs .qs__h1 {
   color: transparent;
   font-style: normal;
   font-family: "Ubuntu", sans-serif;
@@ -121,53 +121,70 @@ p {
 /*Main Quien Somos?*/
 .qs {
   background-color: #C0C0C0; }
-
-#quienSomosSection {
-  padding: 16px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; }
-
-.quienSomos {
-  border-radius: 16px;
-  margin: 16px;
-  background-color: lightgray;
-  width: 40%;
-  opacity: 80%; }
-
-.imagenQuienSomos {
-  display: flex;
-  justify-content: center;
-  background-size: contain;
-  background-color: lightgray;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  padding-top: 10px; }
-
-.contenidoQuienSomos {
-  padding: 16px 8px 16px 8px;
-  color: #302f2e;
-  font-style: normal;
-  font-family: 'Rubik', sans-serif;
-  font-size: 15px;
-  text-align: center; }
-
-.tituloQuienSomos {
-  padding-bottom: 8px;
-  color: #3a2108;
-  font-style: normal;
-  font-family: 'Ubuntu', sans-serif;
-  text-align: center;
-  text-transform: capitalize;
-  font-size: 20px; }
-
-#servicios {
-  color: #302f2e;
-  padding: 16px 8px 16px 8px;
-  font-style: normal;
-  font-family: 'Rubik', sans-serif;
-  font-size: 40px;
-  text-align: center; }
+  .qs .qs__section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 16px; }
+    .qs .qs__section .section__uno {
+      border-radius: 16px;
+      margin: 16px;
+      background-color: lightgray;
+      width: 40%;
+      opacity: 80%; }
+      .qs .qs__section .section__uno .uno__img {
+        display: flex;
+        justify-content: center;
+        background-size: contain;
+        background-color: lightgray;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 10px; }
+      .qs .qs__section .section__uno .uno__contenido {
+        padding: 16px 8px 16px 8px;
+        color: #302f2e;
+        font-style: normal;
+        font-family: 'Rubik', sans-serif;
+        font-size: 15px;
+        text-align: center; }
+      .qs .qs__section .section__uno .uno__subTitulo {
+        padding-bottom: 8px;
+        color: #3f3e3e;
+        font-style: normal;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 20px; }
+    .qs .qs__section .section__dos {
+      border-radius: 16px;
+      margin: 16px;
+      background-color: lightgray;
+      width: 40%;
+      opacity: 80%; }
+      .qs .qs__section .section__dos .dos__titulo {
+        color: transparent;
+        background: linear-gradient(180deg, #C0C0C0 0%, #393939 100%);
+        padding: 16px 8px 16px 8px;
+        font-style: normal;
+        font-family: 'Rubik', sans-serif;
+        font-size: 5vw;
+        text-align: center;
+        -webkit-background-clip: text; }
+      .qs .qs__section .section__dos .dos__contenido {
+        padding: 16px 8px 16px 8px;
+        color: #302f2e;
+        font-style: normal;
+        font-family: 'Rubik', sans-serif;
+        font-size: 15px;
+        text-align: center; }
+      .qs .qs__section .section__dos .dos__subTitulo {
+        padding-bottom: 8px;
+        color: #3f3e3e;
+        font-style: normal;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 20px; }
 
 /*Main Contacos*/
 .contactos {
@@ -214,9 +231,9 @@ p {
 @media only screen and (max-width: 600px) {
   #grilla {
     display: grid;
-    height: 1200px;
+    height: 1500px;
     grid-template-columns: 100%;
-    grid-template-rows: 250px 250px 250px 250px;
+    grid-template-rows: 300px 300px 300px 300px;
     grid-template-areas: "foto1" "articulo1" "foto2" "articulo2";
     justify-content: center;
     grid-column-gap: 20px;
@@ -316,7 +333,7 @@ p {
 @media only screen and (min-width: 600px) {
   #grilla {
     display: grid;
-    height: 1200px;
+    height: 1000px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 400px 400px;
     grid-template-areas: "foto1 articulo1" "articulo2 foto2";
