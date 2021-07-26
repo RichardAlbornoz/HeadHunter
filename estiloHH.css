@@ -127,7 +127,7 @@ p {
     justify-content: space-around;
     padding: 16px; }
     .qs .qs__section .section__uno {
-      border-radius: 16px;
+      border-radius: 20px;
       margin: 16px;
       background-color: lightgray;
       width: 40%;
@@ -140,6 +140,9 @@ p {
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
         padding-top: 10px; }
+        .qs .qs__section .section__uno .uno__img .img__semilla {
+          border-radius: 20px;
+          width: 60%; }
       .qs .qs__section .section__uno .uno__contenido {
         padding: 16px 8px 16px 8px;
         color: #302f2e;
@@ -156,7 +159,7 @@ p {
         text-transform: capitalize;
         font-size: 20px; }
     .qs .qs__section .section__dos {
-      border-radius: 16px;
+      border-radius: 20px;
       margin: 16px;
       background-color: lightgray;
       width: 40%;

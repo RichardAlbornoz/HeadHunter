@@ -183,7 +183,7 @@ p{
         padding: 16px;
 
         .section__uno{
-            border-radius: 16px;
+            border-radius: 20px;
             margin: 16px;
             background-color: lightgray;
             width: 40%;
@@ -197,6 +197,11 @@ p{
                 border-top-left-radius: 8px;
                 border-top-right-radius: 8px;
                 padding-top: 10px;
+
+                .img__semilla{
+                    border-radius: 20px;
+                    width: 60%;
+                }
             }
             .uno__contenido{
                 padding: 16px 8px 16px 8px;
@@ -218,7 +223,7 @@ p{
 
         }
         .section__dos{
-            border-radius: 16px;
+            border-radius: 20px;
             margin: 16px;
             background-color: lightgray;
             width: 40%;
