@@ -277,7 +277,7 @@ p{
             border-radius: 16px;
             background-color: lightgray;
             opacity: 90%;
-            width: 100%;
+            width: 90%;
             padding: 10px;
         }
     }
@@ -332,10 +332,12 @@ p{
     }
 .divImg__fUno{
     grid-area: foto1;
+    border-radius: 10px;
     @include sizes(70%, 70%);
 }
 .divImg__fDos{
     grid-area: foto2;
+    border-radius: 10px;
     @include sizes(70%, 70%);
 }
 .grilla__divImg{
@@ -385,50 +387,62 @@ p{
 }
 .fotoUno{
     grid-area: foto1;
+    border-radius: 10px;
     @include sizes(90%, 90%);
 }
 .fotoDos{
     grid-area: foto2;
+    border-radius: 10px;
     @include sizes(90%, 90%);
 }
 .fotoTres{
     grid-area: foto3;
+    border-radius: 10px;
     @include sizes(90%, 90%);
 }
 .fotoCuatro{
     grid-area: foto4;
+    border-radius: 10px;
     @include sizes(90%, 90%);
 }
 .fotoCinco{
     grid-area: foto5;
+    border-radius: 10px;
    @include sizes(90%, 90%);
 }
 .fotoSeis{
     grid-area: foto6;
+    border-radius: 10px;
     @include sizes(90%, 90%);
 }
 .fotoSiete{
     grid-area: foto7;
+    border-radius: 10px;
     @include sizes(90%, 90%);
 }
 .fotoOcho{
     grid-area: foto8;
+    border-radius: 10px;
     @include sizes(90%, 90%);
 }
 .fotoNueve{
     grid-area: foto9;
+    border-radius: 10px;
     @include sizes(90%, 90%);
 }
 .fotoDiez{
     grid-area: foto10;
+    border-radius: 10px;
     @include sizes(90%, 90%);
 }
 .fotoOnce{
     grid-area: foto11;
+    border-radius: 10px;
    @include sizes(90%, 90%);
 }
 .fotoDoce{
     grid-area: foto12;
+    border-radius: 10px;
     @include sizes(90%, 90%);
 }
 }
@@ -447,11 +461,13 @@ p{
 }
 .divImg__fUno{
     grid-area: foto1;
-    @include sizes(75%, 75%);
+    border-radius: 20px;
+    @include sizes(80%, 80%);
 }
 .divImg__fDos{
     grid-area: foto2;
-    @include sizes(75%, 75%);
+    border-radius: 20px;
+    @include sizes(80%, 80%);
 }
 .grilla__divImg{
     display:flex;
@@ -461,7 +477,7 @@ p{
 .grilla__aUno{
     grid-area: articulo1;
     @include sizes(100%, 100%);
-    padding: 0px 20px;
+    padding: 20px 20px 0px 10px;
 }
 .grilla__aDos{
     grid-area: articulo2;
@@ -497,50 +513,62 @@ p{
 }
 .fotoUno{
     grid-area: foto1;
+    border-radius: 10px;
     @include sizes(90%, 90%);
 }
 .fotoDos{
     grid-area: foto2;
+    border-radius: 10px;
     @include sizes(90%, 90%);
 }
 .fotoTres{
     grid-area: foto3;
+    border-radius: 10px;
     @include sizes(90%, 90%);
 }
 .fotoCuatro{
     grid-area: foto4;
+    border-radius: 10px;
     @include sizes(90%, 90%);
 }
 .fotoCinco{
     grid-area: foto5;
+    border-radius: 10px;
    @include sizes(90%, 90%);
 }
 .fotoSeis{
     grid-area: foto6;
+    border-radius: 10px;
     @include sizes(90%, 90%);
 }
 .fotoSiete{
     grid-area: foto7;
+    border-radius: 10px;
     @include sizes(90%, 90%);
 }
 .fotoOcho{
     grid-area: foto8;
+    border-radius: 10px;
     @include sizes(90%, 90%);
 }
 .fotoNueve{
     grid-area: foto9;
+    border-radius: 10px;
     @include sizes(90%, 90%);
 }
 .fotoDiez{
     grid-area: foto10;
+    border-radius: 10px;
     @include sizes(90%, 90%);
 }
 .fotoOnce{
     grid-area: foto11;
+    border-radius: 10px;
    @include sizes(90%, 90%);
 }
 .fotoDoce{
     grid-area: foto12;
+    border-radius: 10px;
     @include sizes(90%, 90%);
 }    
 }
@@ -559,10 +587,12 @@ p{
 }
 .divImg__fUno{
     grid-area: foto1;
+    border-radius: 20px;
     @include sizes(80%, 80%);
 }
 .divImg__fDos{
     grid-area: foto2;
+    border-radius: 20px;
     @include sizes(80%, 80%);
 }
 .grilla__divImg{
@@ -573,7 +603,7 @@ p{
 .grilla__aUno{
     grid-area: articulo1;
     @include sizes(100%, 100%);
-    padding: 0px 20px;
+    padding: 20px 20px 0px 10px;
 }
 .grilla__aDos{
     grid-area: articulo2;
@@ -611,50 +641,62 @@ p{
 }
 .fotoUno{
     grid-area: foto1;
+    border-radius: 10px;
     @include sizes(90%, 90%);
 }
 .fotoDos{
     grid-area: foto2;
+    border-radius: 10px;
     @include sizes(90%, 90%);
 }
 .fotoTres{
     grid-area: foto3;
+    border-radius: 10px;
     @include sizes(90%, 90%);
 }
 .fotoCuatro{
     grid-area: foto4;
+    border-radius: 10px;
     @include sizes(90%, 90%);
 }
 .fotoCinco{
     grid-area: foto5;
+    border-radius: 10px;
    @include sizes(90%, 90%);
 }
 .fotoSeis{
     grid-area: foto6;
+    border-radius: 10px;
     @include sizes(90%, 90%);
 }
 .fotoSiete{
     grid-area: foto7;
+    border-radius: 10px;
     @include sizes(90%, 90%);
 }
 .fotoOcho{
     grid-area: foto8;
+    border-radius: 10px;
     @include sizes(90%, 90%);
 }
 .fotoNueve{
     grid-area: foto9;
+    border-radius: 10px;
     @include sizes(90%, 90%);
 }
 .fotoDiez{
     grid-area: foto10;
+    border-radius: 10px;
     @include sizes(90%, 90%);
 }
 .fotoOnce{
     grid-area: foto11;
+    border-radius: 10px;
    @include sizes(90%, 90%);
 }
 .fotoDoce{
     grid-area: foto12;
+    border-radius: 10px;
     @include sizes(90%, 90%);
 }    
 }
