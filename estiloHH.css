@@ -234,9 +234,9 @@ p {
 @media only screen and (max-width: 600px) {
   #grilla {
     display: grid;
-    height: 1500px;
+    height: 1700px;
     grid-template-columns: 100%;
-    grid-template-rows: 300px 300px 300px 300px;
+    grid-template-rows: 300px 550px 300px 350px;
     grid-template-areas: "foto1" "articulo1" "foto2" "articulo2";
     justify-content: center;
     grid-column-gap: 20px;
@@ -352,7 +352,7 @@ p {
     display: grid;
     height: 1000px;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 400px 400px;
+    grid-template-rows: 560px 400px;
     grid-template-areas: "foto1 articulo1" "articulo2 foto2";
     justify-content: center;
     grid-column-gap: 20px;
